@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-import Button from "components/CustomButtons/Button.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -19,16 +18,6 @@ import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
 
-// const linkToLogin = () => {
-//   return (
-//     <Link to={"/login-page"} className={classes.link}>
-//     <Button color="primary" size="lg" simple>
-//       View Login Page
-//     </Button>
-//     </Link>
-//   )
-// }
-
 const dashboardRoutes = [ ];
 
 const useStyles = makeStyles(styles);
@@ -41,28 +30,23 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="Blue Cottage Remodeling"
         rightLinks={<MyHeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 200,
           color: "white"
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+      <Parallax filter image={require("assets/img/C6617004-1613762339915138large.jpg")}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
-              <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
-              </h4>
+            <GridItem xs={12} sm={12} md={12}>
+              <h1 className={classes.title}>blue-cottage-remodeling.com</h1>
+            
               <br />
-              <Button
+              {/* <Button
                 color="danger"
                 size="lg"
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
@@ -71,7 +55,13 @@ export default function LandingPage(props) {
               >
                 <i className="fas fa-play" />
                 Watch video
-              </Button>
+              </Button> */}
+            </GridItem>
+            <GridItem  xs={12} sm={6} md={6}>
+            <h4>
+              Have you got projects you want to get done at your house? 
+              </h4>
+              <h3>Call us and we'll make it happen.</h3>
             </GridItem>
           </GridContainer>
         </div>

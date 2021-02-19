@@ -4,12 +4,8 @@ import ListItem from "@material-ui/core/ListItem";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
-// @material-ui/icons
-import { Apps } from "@material-ui/icons";
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 import Button from "components/CustomButtons/Button.js";
-// core components
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import React from "react";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
@@ -33,13 +29,13 @@ export default function MyHeaderLinks(props) {
         </Link>
         ,
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         
          <Link to={"/profile-page"} className={classes.dropdownLink}>
            Profile Page
         </Link>
-      </ListItem>
-      <ListItem className={classes.listItem}>
+      </ListItem> */}
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           buttonText="Components"
@@ -61,7 +57,8 @@ export default function MyHeaderLinks(props) {
             </a>,
           ]}
         />
-      </ListItem>
+      </ListItem> */}
+      
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"

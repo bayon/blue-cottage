@@ -13,7 +13,6 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route exact path="/" component={LandingPage} />
-       {/* <Route path="/landing-page" component={LandingPage} />    */}
       <Route exact path="/profile-page" component={ProfilePage} />
       <Route exact path="/login-page" component={LoginPage} />
        {/* <Route path="/" component={Components} />  */}

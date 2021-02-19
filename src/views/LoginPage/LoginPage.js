@@ -5,7 +5,8 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
-import image from "assets/img/bg7.jpg";
+//import image from "assets/img/bg7.jpg";
+import image from "assets/img/C6617004-1613762339915138large.jpg";
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
@@ -37,7 +38,7 @@ export default function LoginPage(props) {
       <Header
         absolute
         color="transparent"
-        brand="Material Kit React"
+        brand="Blue Cottage Remodeling"
         rightLinks={<MyHeaderLinks />}
         {...rest}
       />
