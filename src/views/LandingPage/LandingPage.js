@@ -17,7 +17,7 @@ import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
-
+const PHONE_NUM="8122670592";
 const dashboardRoutes = [ ];
 
 const useStyles = makeStyles(styles);
@@ -62,6 +62,7 @@ export default function LandingPage(props) {
               Have you got projects you want to get done at your house? 
               </h4>
               <h3>Call us and we'll make it happen.</h3>
+              <a href="tel:8122670592" style={{color:"#fff",textDecoration:"none"}}> (812) 267-0592 </a>
             </GridItem>
           </GridContainer>
         </div>
