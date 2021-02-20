@@ -19,10 +19,10 @@ export default function WorkSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Work with us</h2>
+          <h2 className={classes.title}>Let's make a plan</h2>
           <h4 className={classes.description}>
-             We'd love to hear what project you want to get done for your house. We can come out for a free estimate. Whether you know exactly what you want or you need some design ideas, we can help you sort out the details and get it done.
-          </h4>
+            Call for a free estimate.
+           </h4>
           <form>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>

@@ -23,7 +23,7 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Blue Cottage Remodeling</h2>
           <h5 className={classes.description}>
-            Additions, Kitchen Remodels, Decks, Bathroom Renovations, Building a shed, whatever ... let's do it.
+            Additions, Kitchen Remodels, Decks, Bathroom Renovations, Building a shed,...whatever you want.
                       
           </h5>
         </GridItem>
@@ -33,7 +33,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Licensed"
-              description="I've currently got a driver's license does that count?."
+              description="I'm in the process of getting any licenses needed for remodeling."
               icon={Gavel}
               iconColor="info"
               vertical
@@ -42,7 +42,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Insured"
-              description="We'll get insurance or something I guess..."
+              description="I'm also in the process of setting up the business to have insurance."
               icon={House}
               iconColor="success"
               vertical
@@ -51,7 +51,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Experienced"
-              description="Carpentry, Light Electrical , Plumbing, Designing, Roofing, ..."
+              description="Carpentry, Light Electrical , Plumbing, Designing, Roofing, 15 years of professional experience and 30 years altogether."
               icon={Work}
               iconColor="danger"
               vertical

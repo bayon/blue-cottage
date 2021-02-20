@@ -45,7 +45,7 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                   Katie Forte is my wife. We've been married like a hundred years now. She helps me keep my schedule straight and handles all the administrative business.
+                   Katie Forte is my wife. We've been married and living in southern Indiana for 10 years. She keeps the schedule and paper work, and additional services such as perma-culture gardening.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -85,7 +85,7 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                   I swing a hammer, cut wood with saws, and break stuff with slegde hammers. I usually come home dirty and smelly. 
+                   I'm a carpenter, framer, finish carpenter. I do light electrical work and plumbing, as well as, drywall, painting, tile, roof repair, and any type of installation of windows, doors, applicances, etc. 
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>

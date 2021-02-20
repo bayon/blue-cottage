@@ -1,5 +1,7 @@
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import Icon from '@material-ui/core/Icon';
+import { createMuiTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
+import Typography from '@material-ui/core/Typography';
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -17,20 +19,48 @@ import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
-const PHONE_NUM="8122670592";
 const dashboardRoutes = [ ];
 
 const useStyles = makeStyles(styles);
+const theme = createMuiTheme();
+theme.typography.h1 = {
+  fontSize: '1.8rem',
+  '@media (min-width:600px)': {
+    fontSize: '1.1rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2.5rem',
+  },
+};
+theme.typography.h2 = {
+  fontSize: '1.5rem',
+  '@media (min-width:600px)': {
+    fontSize: '1.8rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2.2rem',
+  },
+};
+theme.typography.h3 = {
+  fontSize: '1.2rem',
+  '@media (min-width:600px)': {
+    fontSize: '1.5rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2rem',
+  },
+};
 
 export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
+    <ThemeProvider theme={theme}>
     <div>
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Blue Cottage Remodeling"
+        brand="Blue Cottage Remodeling LLC."
         rightLinks={<MyHeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -43,8 +73,8 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
-              <h1 className={classes.title}>blue-cottage-remodeling.com</h1>
-            
+              {/* <h1 className={classes.title}>blue-cottage-remodeling.com</h1> */}
+              <Typography variant="h1">Blue Cottage</Typography>
               <br />
               {/* <Button
                 color="danger"
@@ -58,11 +88,16 @@ export default function LandingPage(props) {
               </Button> */}
             </GridItem>
             <GridItem  xs={12} sm={6} md={6}>
-            <h4>
-              Have you got projects you want to get done at your house? 
-              </h4>
-              <h3>Call us and we'll make it happen.</h3>
-              <a href="tel:8122670592" style={{color:"#fff",textDecoration:"none"}}> (812) 267-0592 </a>
+            
+              <Typography variant="h2">Let's renovate!</Typography>
+             
+             <div style={{marginTop:15}}>
+
+            
+            
+              <a href="tel:8122670592" style={{color:"#fff",textDecoration:"none"}}  >  <Typography variant="h3">Call us!</Typography> (812) 267-0592  <Icon  >phone</Icon></a>
+             
+              </div>
             </GridItem>
           </GridContainer>
         </div>
@@ -76,5 +111,6 @@ export default function LandingPage(props) {
       </div>
       <Footer />
     </div>
+    </ThemeProvider>
   );
 }
