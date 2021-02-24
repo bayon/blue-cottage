@@ -22,6 +22,14 @@ const workStyle = {
   textArea: {
     marginRight: "15px",
     marginLeft: "15px"
+  },
+  inputBox: {
+    marginTop: "15px",
+    border: "none",
+    outline: "none",
+    borderBottom: "1px solid #ddd",
+    padding: "10px",
+    width: "100%"
   }
 };
 
