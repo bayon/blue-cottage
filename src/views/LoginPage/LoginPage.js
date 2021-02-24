@@ -84,9 +84,7 @@ export default function LoginPage(props) {
               >
                 {(props) => (
                   <Card className={classes[cardAnimaton]}>
-                    
                     <CardBody>
-                   
                       <input
                         style={styles.inputBox}
                         placeholder="Email"
@@ -113,13 +111,13 @@ export default function LoginPage(props) {
                         <div>Login</div>
                       </Button>
                     </CardBody>
-                    <CardFooter>
-                      <div>
-                        <div>Don't Have an Account?</div>
-
-                        <Button onClick={() => console.log("register")}>
+                    <CardFooter style={{ textAlign: "center" }}>
+                      <div >
+                        <div> <span style={{marginRight:"15px"}}>Don't Have an Account?</span>
+                        <Button onClick={() => console.log("register")} >
                           <div>Register</div>
                         </Button>
+                        </div>
                       </div>
                     </CardFooter>
                   </Card>
