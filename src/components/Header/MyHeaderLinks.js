@@ -21,13 +21,11 @@ export default function MyHeaderLinks(props) {
         <Link to={"/"} className={classes.dropdownLink}>
            Home Page
         </Link>
-        ,
       </ListItem>
       <ListItem className={classes.listItem}>
         <Link to={"/login-page"} className={classes.dropdownLink}>
            Login Page
         </Link>
-        ,
       </ListItem>
       {/* <ListItem className={classes.listItem}>
         

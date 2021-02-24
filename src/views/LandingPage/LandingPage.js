@@ -69,12 +69,12 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/C6617004-1613762339915138large.jpg")}>
+      <Parallax filter image={require("assets/img/theamericangothichouseineldoniowa2400_justpic.png")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
               {/* <h1 className={classes.title}>blue-cottage-remodeling.com</h1> */}
-              <Typography variant="h1">Blue Cottage</Typography>
+              <Typography variant="h1">Blue Cottage Remodeling</Typography>
               <br />
               {/* <Button
                 color="danger"
@@ -89,13 +89,13 @@ export default function LandingPage(props) {
             </GridItem>
             <GridItem  xs={12} sm={6} md={6}>
             
-              <Typography variant="h2">Let's renovate!</Typography>
+              <Typography variant="h3">Let's renovate!</Typography>
              
              <div style={{marginTop:15}}>
 
             
             
-              <a href="tel:8122670592" style={{color:"#fff",textDecoration:"none"}}  >  <Typography variant="h3">Call us!</Typography> (812) 267-0592  <Icon  >phone</Icon></a>
+              <a href="tel:8122670592" style={{color:"#fff",textDecoration:"none"}}  >   (812) 267-0592  <Icon  >phone</Icon></a>
              
               </div>
             </GridItem>
