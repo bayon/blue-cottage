@@ -69,7 +69,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/theamericangothichouseineldoniowa2400_justpic.png")}>
+      <Parallax filter image={require("assets/img/american_gothic_bw.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
@@ -95,7 +95,7 @@ export default function LandingPage(props) {
 
             
             
-              <a href="tel:8122670592" style={{color:"#fff",textDecoration:"none"}}  >   (812) 267-0592  <Icon  >phone</Icon></a>
+              <a href="tel:8122670592" style={{color:"#fff",textDecoration:"none"}}>(812) 267-0592  <Icon  >phone</Icon></a>
              
               </div>
             </GridItem>
